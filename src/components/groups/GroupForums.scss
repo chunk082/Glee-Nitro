@@ -1,0 +1,607 @@
+.nitro-group-forum {
+    width: 550px;
+    height:570px
+}
+
+.nitro-group-forum .content-area {
+    padding-top: 0 !important;
+    padding-bottom:0 !important
+}
+
+.nitro-group-forum .nitro-group-forum-content {
+    padding-right: 0 !important;
+    padding-left:0 !important
+}
+
+.nitro-group-forum .group-header {
+    background-color: #0e3f52;
+    justify-content:space-between
+}
+
+.nitro-group-forum .group-header .group-header-left {
+    cursor:pointer
+}
+
+.nitro-group-forum .group-header .group-header-left .group-forum-badge {
+    width: 80px;
+    height: 75px;
+    background-color: #000;
+    align-items: center;
+    justify-content:center
+}
+
+.nitro-group-forum .group-header .group-header-left .icon-code-0 {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAArCAYAAAADgWq5AAACE0lEQVR4Xt2XMU4DMRBFU4PECXKPUIEE4gLcgSOgUKZPQU2gSoMoEBLUpENUiDLVghBVKlo6o+94nNmJvev1RlmbkZ7GduzJ28GJQq+3DJUJOtT+cKKOxo9JA0eStguaC5MDeXi4s1mO5Zzvr2IwvNLsHZ6qj5OBHsOxJJwDVjgzeurg7DwLSsL9fr8E7k9KOIWn06mGhLGODwnPQBbbBkHCKeEUzupK5IAVRiwWX5r5/F3jGrvytkD8D+FUcQqja/x3QArQX9IpTBtef36TgBpYKUyb34pPC81963Ius+913zqXbiS8iWzeZG29LhONhAlZUK7LORdVx0swrqvTSjgWKUqy49t7jdxfR7BwaCd4tqIjhhG+nNzU1uPrrYRDsq7DRcFzWdp1zpdbCfMnd617ZUl4tLoWIfWihJuwJjwzcGnW5SYEC8sn9s31eX5vSZZLsy5X3eVWHeaFqrJXGCG6LIWr8kaEeQdoXBKGGMlSsC5LYVmvlXATdA3ZXQojjD0x38XBwq4OyDllK0xd5sG6S98S8ryrfpRwk2yKrTqNmC3XAK5CnTDPUcL8iV1zuQ4hEpSiyL7zsk6UcBvorsbcWUmtcFY/4LP7FyllOhNG18wbB4H9ONeZMN5v5/pF7T59WzDHelEUGjnGuU6FSZLAnDxIjI9xjsadCGfV4Y3cYZJOOdhD6Fh7skQphXwxNXT8AQPDoKa/Z7ZsAAAAAElFTkSuQmCC);
+    width: 44px;
+    height:43px
+}
+
+.nitro-group-forum .group-header .group-header-left .icon-code-1 {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAArCAYAAAADgWq5AAACMElEQVR4Xt2XsUoDQRCGUytYWuUpbCIICoKljW9g4ROIxMbaIqkFo1VQxEIC5hnUUrBJFUWs0ihiI2lO/jX/MpnsXu4uwdt14WN253b3vpvsQa5S+W1JJJiWrNZbyWbjNmjgSGmbMByOYkY6nWsbdV+P5fw0avVTw9LGTvK8VTN9OI4Jx4AVjoxKsr53EAVjwtVqdQycn5BwCrfbbQOFkcdLIiPQm/0FmYRDwikc1ZGIASuMNhi8Gnq9R4Or74p/Bdr/EA4VpzCqJv8HhAB/SacwJzx8fAcBC5gqzMnd3ouFY19ej3X0XfflpXQu4TIjySVM9IY6r8c6+q778oWE8zLazImem4fMwlkrQanltV0vUjxtP5mfSdgXsZZfAxBb2b+wtL4+DcjLLwbXPq44k7B8ckbK3vfejdT25ZOh2Ty2FYcwcuhjnpTW++n75BaeBtZBQgsPh0N7BJijMEC+cXUzsZ+PzML6ifWYwhCkMI8AhXE0KIx5Uljvp8eFhNOiFKY0zy0keZYp6xJ27TtXYV0RrKUMXzweA1YWec7B/KOTc2+FZxLOCn9+WWkiRVnZPOcXZBZ2VUCPGVE1SrmApKysXu/av5Bw3ijFdHTNT4uFhOUTu8bT8jpOmyev5xYOhanCUf2Bj+4TKWRKE0bVRjfOBOZjXWnCuN/C2V2y2H2zYIx8v9836D7WlSpMSYIxPSgm+1jHfinCUVV4LmeY0iE38RCmTTxZoIw1fTE0TPsB1mmA1AUfVHIAAAAASUVORK5CYII=);
+    width: 44px;
+    height:43px
+}
+
+.nitro-group-forum .group-header .group-header-left .icon-code-2 {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAArCAYAAAADgWq5AAACD0lEQVR4Xt2XP07DMBSHO4PECXqPMoGExMLIHTgCKgsn6I7En6kLYkCt6BkQSyXGTgUhpk6IjaWE/pz8LOfVbhxDGxtLn5794ud+eSRVabXykSWCGtlu9yo76D1EDRwprROKsyJ6Mhjc6Sjncm3uX0Wne6nY2T/OXg47ag7HknAKaOHEaGV7J6dJUBJut9sl8PzEhFW43+8rKIw8XhIzAnnYJvASjgmrcFKPRApoYYzZ7E0xmTwrbHNb3BQY/0M4VqzC6Jr5OyAG+Je0CnPD08dXFLCBK4W5eTR51XDtysu1jK7rrrwpXUs4JBaHKmzXfSOpJUzkgTJPcNb3cHHeZx6xtu2XdTIfJByCOmshOz/KI9a92/ulfXXwFvbthBl1h7Ox7vD5xY213pcgYVssiq15yqK7EOZ11kipVQQJ2zqU1421QClvPA6slXkp5sJbuAp20pTmTUBsKW+8iGsRtnVWrlGrXrBCjt8QfOkoiOvIUXZtwlXRlDRl58OydGh3wa+EZYcpTSFbh5kL6W4tYV/YZQBRs6Nch3YXeAvLjrpgh9XL5iLg24HUEjaji+IQL9Yu7NNhwGfTB1lbhbdwLFQKJ/UDPrl/kWKmMWF0rfhgL7AfdY0J4/O2rh+z7dG7Bmvkp9OpQs5R16gwJQnW9KCYOUcd540IJ9XhP3mGKR3zMG5CjaU7i5TSkBdjQ40fnJ+KF+cQgAIAAAAASUVORK5CYII=);
+    width: 44px;
+    height:43px
+}
+
+.nitro-group-forum .group-header .group-header-left .group-info {
+    padding:10px
+}
+
+.nitro-group-forum .group-header .group-header-right .group-forum-settings {
+    border-radius: 46px;
+    background: #000;
+    padding: 4px;
+    margin-top: auto;
+    cursor:pointer
+}
+
+.nitro-group-forum .group-header .group-header-right .icon-settings {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAANklEQVQoz2NgoAX4DwVkKSbEx6qZECBoO8ka0TXjE8NrI0nyFGmmyNkUBxhFUUVRIiFk2OACAELRPtC5PrmmAAAAAElFTkSuQmCC);
+    width: 13px;
+    height:14px
+}
+
+.nitro-group-forum .shortcuts-header {
+    height: 25px;
+    background-color: #fff;
+    padding:5px
+}
+
+.nitro-group-forum .shortcuts-header .shortcuts-options .shortcuts-option {
+    color: #4790c3 !important;
+    text-decoration: underline;
+    cursor:pointer
+}
+
+.nitro-group-forum .content-header {
+    padding:5px
+}
+
+.nitro-group-forum .content-header div {
+    font-weight: 700;
+    color: #a6a6a2 !important;
+    font-size:16px
+}
+
+.nitro-group-forum .content-header .space-between {
+    justify-content:space-between
+}
+
+.nitro-group-forum .content-header .btn-search-toggle {
+    height: 18px !important;
+    min-height: 0;
+    color:#fff !important
+}
+
+.nitro-group-forum .content-header .btn-search-toggle svg {
+    height:11px
+}
+
+.nitro-group-forum .content-header .btn-search-action {
+    color:#fff !important
+}
+
+.nitro-group-forum .content-wrap {
+    padding-right: 5px;
+    padding-left:5px
+}
+
+.nitro-group-forum .content-wrap .content {
+    height: 320px;
+    border-radius: 5px !important;
+    border: 1px solid !important;
+    padding: 1px;
+    font-size: 11px;
+    grid-gap: initial !important;
+    gap: initial !important;
+    background-color: #bab8b4;
+    overflow:auto !important
+}
+
+.nitro-group-forum .content-wrap .content div {
+    padding:1px
+}
+
+.nitro-group-forum .content-wrap .content > div:nth-child(odd) {
+    background-color: #eefeff;
+    border-bottom:1px solid
+}
+
+.nitro-group-forum .content-wrap .content > div:nth-child(2n) {
+    background-color: #b2e6fa;
+    border-bottom:1px solid
+}
+
+.nitro-group-forum .content-wrap .content .thread {
+    height: 49px;
+    width: 532px;
+    //align-items: center;
+    word-break: break-word;
+    cursor:pointer
+}
+
+.nitro-group-forum .content-wrap .content .thread .thread-actions {
+    height: 46px;
+    width: 20px;
+    border-right:1px solid
+}
+
+.nitro-group-forum .content-wrap .content .thread .thread-actions .icon-unlocked {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAoUlEQVR4Xq2RgQ3DIAwEmTZdgzFC12CM0qhLMIeTNzVyHENbqS+dHPv9CSgh/EnkMBWVUkgLPeZ2UdQDeBY+BXXgmzlrZE7vNgoNxcvq7DNaID3aF2KMXNGD+3suqD7QdhzL8nRmoIeW9UW3A1Sg3465413O3P/X5I5tSUAP6Wp9N1RrPVXru6GcMwdQPf8SkkUBvRuCoUkpdawnIQ7+QNgBUM19mo6pp5cAAAAASUVORK5CYII=);
+    width: 13px;
+    height:18px
+}
+
+.nitro-group-forum .content-wrap .content .thread .thread-actions .icon-locked {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAl0lEQVR4XtWP4Q2EIAxGmdZbgzHk1mAM0bgEcyBfsaTWep4/bfJS24+HwbnXVTH4WSWlVGRhxl4f5OoCvpk7UQr/7Nut4sYDat+EMLWbvPfUMYOv2vNM0lJ/r5mNHejSMK7lU0EHe0Bgb2T2G1BXbyQJIYMZJbvOTSnnfOg6N6UYIwnoVn6S+CCD2ZQQSEIIHZ2xROID3Aa1vHKNiHH92wAAAABJRU5ErkJggg==);
+    width: 13px;
+    height:18px
+}
+
+.nitro-group-forum .content-wrap .content .thread .thread-actions .icon-unpinned {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAbUlEQVR4XrWRgQmAMAwEO61zdAydSRA3eknIhxhDqaAHT2mSoy1t7QdgmQbLemLb8UpUSXJgXvSTRiKLGgpMJXqDyQITpZuYBRt8CESvEN8itTyUQe/dxRkJgqwSirYviYLXRh9bCaSqOcPmJ1xA/LLV2n5rXQAAAABJRU5ErkJggg==);
+    width: 13px;
+    height:15px
+}
+
+.nitro-group-forum .content-wrap .content .thread .thread-actions .icon-pinned {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAW0lEQVR4XmNgQAX/8WCs4P/M0//B+Nx/BIaJgeTRNcDA/7QZFzAwSBxdITIAK4KZDsJDXBOGBkIa4QqQg5uYYIcJgnFDQwMKH4rxgv8gAKLRJfCBQa4JBHBqAACB5tc1slxugAAAAABJRU5ErkJggg==);
+    width: 13px;
+    height:15px
+}
+
+.nitro-group-forum .content-wrap .content .thread .thread-author-info {
+    width: 220px;
+    grid-gap: initial !important;
+    gap: initial !important;
+    border-right:1px solid
+}
+
+.nitro-group-forum .content-wrap .content .thread .thread-author-info .header {
+    font-size:13px
+}
+
+.nitro-group-forum .content-wrap .content .thread .thread-info {
+    width: 100px;
+    grid-gap: initial !important;
+    gap: initial !important;
+    border-right:1px solid
+}
+
+.nitro-group-forum .content-wrap .content .thread .thread-last-message-info {
+    grid-gap: initial !important;
+    gap:initial !important
+}
+
+.nitro-group-forum .content-wrap .content .thread-last-message-info:hover, .nitro-group-forum .content-wrap .content .thread-without-actions:hover {
+    opacity:.5
+}
+
+.nitro-group-forum .content-wrap .content .thread-right-side {
+    margin-left: auto;
+    padding:initial
+}
+
+.nitro-group-forum .content-wrap .content .delete {
+    width: 27px;
+    background-color: #de4537;
+    justify-content: center;
+    align-items:center
+}
+
+.nitro-group-forum .content-wrap .content .delete .icon-delete {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAYAAABmBXS+AAAAKElEQVR4XmNgQAL/kQCyOIokTjF0SXQAlofpwAcQqvHQg1oRLgCSBwCtXLNNhEe6QAAAAABJRU5ErkJggg==);
+    width: 9px;
+    height: 10px;
+    scale:1.35
+}
+
+.nitro-group-forum .content-wrap .content .edit {
+    width: 27px;
+    background-color: #67bd51;
+    justify-content: center;
+    align-items:center
+}
+
+.nitro-group-forum .content-wrap .content .edit .icon-edit {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFvGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuYTg3MzFiOSwgMjAyMS8wOS8wOS0wMDozNzozOCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjAgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyNC0wMS0xNlQyMDo0MToxNSswMTowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyNC0wMS0xNlQyMDo0MToxNSswMTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjQtMDEtMTZUMjA6NDE6MTUrMDE6MDAiIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmE2ZGQ1ZjQ2LTk5MGItYWM0NS05MjI5LWY3NmRlZDQ4NmE4OCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDphNmRkNWY0Ni05OTBiLWFjNDUtOTIyOS1mNzZkZWQ0ODZhODgiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDphNmRkNWY0Ni05OTBiLWFjNDUtOTIyOS1mNzZkZWQ0ODZhODgiPiA8cGhvdG9zaG9wOkRvY3VtZW50QW5jZXN0b3JzPiA8cmRmOkJhZz4gPHJkZjpsaT54bXAuZGlkOjI1YjViZDVjLWQyNGMtMDY0ZC04NzhiLTNiMzI3YzRjNWMyMTwvcmRmOmxpPiA8cmRmOmxpPnhtcC5kaWQ6YTgzZGQyNzYtYThkYy03YTQ4LTk5YzMtYWQ3MjRlODIxYjI2PC9yZGY6bGk+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YTZkZDVmNDYtOTkwYi1hYzQ1LTkyMjktZjc2ZGVkNDg2YTg4IiBzdEV2dDp3aGVuPSIyMDI0LTAxLTE2VDIwOjQxOjE1KzAxOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjMuMCAoV2luZG93cykiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+I6BkrQAAAH1JREFUKJGVk0sSwCAIQxPH+1+ZLuoHaUTLytK8BMaWZobL6kL2RvkJLucb2CfS92pXkJzquYraia1vn2QBMjyPWuAk0RsM0wFfJM692jmOHYUyUY2tEmRihOU9HkxRkNxjBvpkNeYH9N/CDlZGr1v4D6p/l4GqykZ0BAHgAYb3LRXJMjalAAAAAElFTkSuQmCC);
+    width: 15px;
+    height:15px
+}
+
+.nitro-group-forum .content-wrap .content .report {
+    width: 27px;
+    background-color: #ff9c65;
+    justify-content: center;
+    align-items:center
+}
+
+.nitro-group-forum .content-wrap .content .report .icon-report {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAYAAAB/9ZQ7AAAAQUlEQVR4XmNgAIL/QACiCQKQQhhAlyMIkPQ+RBdHYSApxAroq/gfEPwB0QhlEHF0xY/BAlAA4sMwsiDxwTbEFAMAOOvWkpBYUUEAAAAASUVORK5CYII=);
+    width: 11px;
+    height: 13px;
+    scale:1.2
+}
+
+.nitro-group-forum .content-wrap .content .reply {
+    width: 27px;
+    background-color: #45a3d9;
+    justify-content: center;
+    align-items:center
+}
+
+.nitro-group-forum .content-wrap .content .reply .icon-reply {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAYAAAACsSQRAAAAWUlEQVR4XrWOUQoAIAhDvf/ZupP9JNQczIwGfmy6h2ZL7j46E/024AAd5kL/IelVkWUjCizLRhRYls0mlUkIepZJSEUUggMdfYcLPMAc91R4XCoxPQNCFcAEbi7GSBN6YIIAAAAASUVORK5CYII=);
+    width: 17px;
+    height:15px
+}
+
+.nitro-group-forum .content-wrap .content .thread-message {
+    background-color: initial !important;
+    border-bottom: initial !important;
+    padding-bottom: 0 !important;
+    background-color: #fff !important;
+    font-size:13px
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-header {
+    background-color: #227aad;
+    justify-content: space-between;
+    font-size:12px
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-header .thread-message-time {
+    padding:5px
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-header .thread-message-modified-time {
+    font-size: 10px;
+    padding-left:5px
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-header .thread-message-id {
+    padding: 5px;
+    align-self:center
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content {
+    padding-top:0
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-avatar-info {
+    width: 130px;
+    background-color: #c6eff9;
+    flex-grow: 0;
+    flex-shrink: 0;
+    cursor:pointer
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-avatar-info .thread-message-avatar-info-text {
+    padding: 3px;
+    z-index:2
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-avatar-info .thread-message-avatar-info-text .thread-message-avatar-name {
+    font-weight:700
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .avatar {
+    width: 50px;
+    height: 84px;
+    margin-top:-31px
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-info {
+    padding: 5px;
+    -webkit-user-select: text;
+    user-select: text;
+    word-break:break-word
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-info .bold-italic {
+    display: inline;
+    font-weight: 700;
+    font-style:italic
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-info .bold {
+    display: inline;
+    font-weight:700
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-info .italic {
+    display: inline;
+    font-style:italic
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-info .username {
+    display: inline;
+    cursor: pointer;
+    color:#00f
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-info .quote {
+    display: inline-block;
+    background-color: #ccc;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 100%;
+    max-width:92%
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-info .quote:empty {
+    height: 14px;
+    margin-bottom:-2px
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-info .horizontal-line {
+    border-bottom:1px solid #888
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-info .quote-horizontal-line {
+    display: inline-block;
+    background-color: #ccc;
+    padding: 4px;
+    width: 100%;
+    max-width: 92%;
+    position: relative;
+    margin-bottom: -2px;
+    height:14px
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-info .quote-horizontal-line:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-top:1px solid #888
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-info div > .quote:first-of-type {
+    padding-top:4px
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-info div > .quote:last-of-type {
+    padding-bottom:4px
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-edit-mode {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height:100%
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-edit-mode .thread-message-edit-textarea {
+    border-radius: initial;
+    box-shadow: none;
+    line-height: normal;
+    font-size: 13px;
+    padding: 5px;
+    outline: none;
+    border-color: #26bf47;
+    box-shadow: 0 0 10px #26bf47;
+    width: 100%;
+    height: 100%;
+    min-height:100px
+}
+
+.nitro-group-forum .content-wrap .content .thread-message .thread-message-content .thread-message-edit-mode .edit-save-button {
+    position: absolute;
+    width: 90px;
+    bottom: 10px;
+    right:10px
+}
+
+.nitro-group-forum .content-wrap .content .group {
+    word-break: break-word;
+    cursor:pointer
+}
+
+.nitro-group-forum .content-wrap .content .group .group-badge {
+    width: 40px !important;
+    height:40px !important
+}
+
+.nitro-group-forum .content-wrap .content .group .group-info {
+    width: 200px;
+    grid-gap: initial !important;
+    gap: initial !important;
+    border-right:1px solid
+}
+
+.nitro-group-forum .content-wrap .content .group .group-info .header {
+    font-size:13px
+}
+
+.nitro-group-forum .content-wrap .content .group .threads-info {
+    width: 100px;
+    grid-gap: initial !important;
+    gap: initial !important;
+    border-right:1px solid
+}
+
+.nitro-group-forum .content-wrap .content .group .threads-last-message-info {
+    grid-gap: initial !important;
+    gap:initial !important
+}
+
+.nitro-group-forum .content-wrap .content .group:hover {
+    opacity:.6
+}
+
+.nitro-group-forum .bottom {
+    align-items: center;
+    margin-top:10px
+}
+
+.nitro-group-forum .bottom .back-button {
+    margin-left: 6px;
+    width: 80px;
+    height:28px
+}
+
+.nitro-group-forum .bottom .new-button {
+    margin-right: 10px;
+    width: 130px;
+    height:28px
+}
+
+.nitro-group-forum .bottom .right-side {
+    align-items: center;
+    margin-left: auto;
+    margin-right:6px
+}
+
+.nitro-group-forum-new {
+    width: 455px;
+    height:450px
+}
+
+.nitro-group-forum-new .content-area {
+    padding-top: 0 !important;
+    padding-bottom:0 !important
+}
+
+.nitro-group-forum-new .nitro-group-forum-new-content {
+    padding-right: 0 !important;
+    padding-left:0 !important
+}
+
+.nitro-group-forum-new .group-header {
+    background-color: #0e3f52;
+    cursor:pointer
+}
+
+.nitro-group-forum-new .group-header .group-forum-badge {
+    width: 80px;
+    height: 75px;
+    background-color: #000;
+    align-items: center;
+    justify-content:center
+}
+
+.nitro-group-forum-new .group-header .group-info {
+    padding:10px
+}
+
+.nitro-group-forum-new .thread-subject {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right:5px
+}
+
+.nitro-group-forum-new .thread-subject .thread-subject-header {
+    background-color: #227aad;
+    padding: 5px;
+    justify-content:space-between
+}
+
+.nitro-group-forum-new .thread-subject .thread-subject-header .formatting-help {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 11px;
+    margin-top:auto
+}
+
+.nitro-group-forum-new .thread-subject .thread-subject-content .form-control {
+    border-radius: initial;
+    padding:4px
+}
+
+.nitro-group-forum-new .bottom {
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top:10px
+}
+
+.nitro-group-forum-new .bottom .button {
+    margin-left: 6px;
+    width: 120px;
+    height:28px
+}
+
+.nitro-group-forum-new .length-warning {
+    margin-left: 7px;
+    margin-top: 11px;
+    font-weight: 700;
+    color:red !important
+}
+
+.nitro-group-forum-settings {
+    width: 360px;
+    height:628px
+}
+
+.nitro-group-forum-settings .content-area {
+    padding-top: 0 !important;
+    padding-bottom:0 !important
+}
+
+.nitro-group-forum-settings .nitro-group-forum-settings-content {
+    padding-right: 0 !important;
+    padding-left:0 !important
+}
+
+.nitro-group-forum-settings .group-header {
+    background-color: #0e3f52;
+    cursor:pointer
+}
+
+.nitro-group-forum-settings .group-header .group-forum-badge {
+    width: 80px;
+    height: 75px;
+    background-color: #000;
+    align-items: center;
+    justify-content:center
+}
+
+.nitro-group-forum-settings .content, .nitro-group-forum-settings .group-header .group-info {
+    padding:10px
+}
+
+.nitro-group-forum-settings .content .options {
+    margin-left:16px
+}
+
+.nitro-group-forum-settings .bottom {
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top:10px
+}
+
+.nitro-group-forum-settings .bottom .button {
+    margin-left: 6px;
+    width: 120px;
+    height:28px
+}

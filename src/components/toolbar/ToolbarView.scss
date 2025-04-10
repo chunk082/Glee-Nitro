@@ -1,0 +1,151 @@
+.nitro-toolbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $toolbar-height;
+    z-index: $toolbar-zindex;
+    pointer-events: all;
+    background: #2e2d2cc2;
+    box-shadow: inset 0px 5px 0px -3px #53524Ec2, inset 0px -4px 0px -3px #494845c2;
+    border-top: 1px solid #0000004d;
+
+    .toolbar-left-side {
+        padding-left: 10px;
+        padding-right: 15px;
+        border-right: 1px solid #454442;
+        height: 40px;
+    }
+
+    .margin-friends {
+        margin-right: 44px;
+    }
+
+    .toolbar-left-collapse {
+        background-image: url(@/assets/images/toolbar/collapse_left.png);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height: 43px;
+        width: 14px;
+        max-width: 14px;
+        position: absolute;
+        left: 0px;
+        border: none;
+    }
+
+    .toolbar-left-collapse-active {
+        background-image: url(@/assets/images/toolbar/collapse_left_active.png);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height: 43px;
+        width: 14px;
+        max-width: 14px;
+        position: absolute;
+        left: 0px;
+        border: none;
+    }
+
+    .toolbar-right-side {
+        padding-left: 15px;
+        border-left: 1px solid #454442;
+        height: 40px;
+        padding-right: 10px;
+    }
+
+    .toolbar-right-collapse {
+        background-image: url(@/assets/images/toolbar/collapse_right.png);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height: 43px;
+        width: 14px;
+        max-width: 14px;
+        position: absolute;
+        right: 0px;
+        border: none;
+    }
+
+    .toolbar-right-collapse-active {
+        background-image: url(@/assets/images/toolbar/collapse_right_active.png);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        height: 43px;
+        width: 14px;
+        max-width: 14px;
+        position: absolute;
+        right: 0px;
+        border: none;
+    }
+
+    .navigation-item {
+        position: relative;
+
+        &.item-avatar {
+            width: 50px;
+            height: 45px;
+            overflow: hidden;
+
+            .avatar-image {
+                margin-left: -5px;
+                margin-top: 25px;
+            }
+        }
+
+        &:hover {
+            -webkit-transform: translate(-1px, -1px);
+            transform: translate(-1px, -1px);
+            filter: drop-shadow(2px 2px 0 rgba($black, 0.8));
+        }
+
+        &.active,
+        &:active {
+            -webkit-transform: unset;
+            transform: unset;
+            filter: none;
+        }
+    }
+
+    #toolbar-chat-input-container {
+
+        @include media-breakpoint-down(sm) {
+            width: 0px;
+            height: 0px;
+        }
+    }
+}
+
+.nitro-toolbar-me {
+    position: absolute;
+    bottom: 52px;
+    left: 15px;
+    z-index: $toolbar-memenu-zindex;
+    border-image-source: url(@/assets/images/toolbar/me_menu_bg.png);
+    border-image-slice: 6 6 6 6 fill;
+    border-image-width: 6px 6px 6px 6px;
+
+    .me-text {
+        font-size: 10px;
+        color: #fff !important
+    }
+
+    .navigation-item {
+        transition: filter .2s ease-out;
+        filter: grayscale(1);
+
+        &:hover {
+            filter: grayscale(0) drop-shadow(2px 2px 0 rgba($black, 0.8));
+        }
+    }
+}
+
+.toolbar-icon-animation {
+    position: absolute;
+    object-fit: cover;
+    height: auto;
+    width: auto;
+    max-width: 120px;
+    max-height: 150px;
+    z-index: 500;
+    filter: drop-shadow(2px 1px 0 rgba($white, 1))
+        drop-shadow(-2px 1px 0 rgba($white, 1))
+        drop-shadow(0 -2px 0 rgba($white, 1));
+}

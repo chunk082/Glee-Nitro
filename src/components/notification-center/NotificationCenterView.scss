@@ -1,0 +1,98 @@
+.nitro-notification-center-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: calc(100% - #{$toolbar-height});
+    z-index: $notification-center-zindex;
+    pointer-events: none;
+
+    .nitro-notification-center {
+        background-color: $dark;
+        height: 100%;
+        pointer-events: all;
+    }
+}
+
+.nitro-alert {
+    min-height: 150px;
+    max-height: 350px;
+
+    .notification-frank {
+        background-image: url('@/assets/images/notifications/frank.gif');
+        width:47px;
+        height: 85px;
+    }
+
+    .notification-text {
+        min-width: 250px;
+    }
+
+    &.nitro-alert-default,
+    &.nitro-alert-motd {
+        width: 350px;
+        .notification-text {
+            min-width: auto;
+        }
+    }
+
+    &.nitro-alert-moderation,
+    &.nitro-alert-alert {
+        width: 300px;
+        .notification-text {
+            min-width: 225px;
+        }
+    }
+}
+
+.nitro-group-room_info {
+    pointer-events: all;
+    border-image-source: url(@/assets/images/notifications/notifications_bg.png);
+    border-image-slice: 9 9 9 9 fill;
+    border-image-width: 9px 9px 10px 9px;
+    font-size: .721875rem;
+    padding: 0 3px 6px 0
+}
+
+.nitro-group-room_info .group-room-header {
+    background: #6a7069;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    padding: 4px 8px
+}
+
+.icon.icon-group_icon_room {
+    background: url(@/assets/images/notifications/group_icon_header.png);
+    width: 21px;
+    height: 16px
+}
+
+.icon.icon-notification_arrow_left {
+    background: url(@/assets/images/notifications/notification_arrow_left.png);
+    width: 18px;
+    height: 19px
+}
+
+.icon.icon-notification_arrow_down {
+    background: url(@/assets/images/notifications/notification_arrow_down.png);
+    width: 18px;
+    height: 19px
+}
+
+.nitro-group-room_info .group-room-header .header-text {
+    margin-right: auto;
+    margin-left: auto
+}
+
+.nitro-notification-bubble {
+    pointer-events: all;
+    padding: 6px 5px;
+    background-color: rgba($dark,.95);
+    box-shadow: inset 0px 5px lighten(rgba($dark,.6),2.5), inset 0 -4px darken(rgba($dark,.6),4);
+    font-size: $font-size-sm;
+
+    .bubble-image-container {
+        width: 50px;
+        height: 50px;
+    }
+}

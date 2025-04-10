@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" crossorigin="use-credentials" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+    <meta name="apple-mobile-web-app-title" content="Nitro">
+    <meta name="application-name" content="Nitro">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <base href="./">
+    <title>Nitro</title>
+  </head>
+  
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" class="w-100 h-100"></div>
+    <script>
+      const NitroConfig = {
+        "config.urls": [ '/renderer-config.json', '/ui-config.json' ],
+        "sso.ticket": (new URLSearchParams(window.location.search).get('sso') || null),
+        "forward.type": (new URLSearchParams(window.location.search).get('room') ? 2 : -1),
+        "forward.id": (new URLSearchParams(window.location.search).get('room') || 0),
+        "friend.id": (new URLSearchParams(window.location.search).get('friend') || 0),
+      };
+    </script>
+    <script type="module" src="./src/index.tsx"></script>
+  </body>
+</html>
+
+<style>
+  #iron-radio-player {
+        z-index: 9999999999;
+        --image: url(https://i.imgur.com/UWFYEmp.png);
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        display: flex;
+        transition: left .2s ease-out;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 12px;
+    }
+
+    #iron-radio-player.collapsed {
+        left: 0;
+    }
+
+    .iron-player-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .radio-player-toggler {
+        width: 15px;
+        height: 80px;
+        background: var(--image) 0px -2px;
+        cursor: pointer;
+    }
+
+    #iron-radio-player.collapsed .radio-player-toggler {
+        transform: scale(-1);
+    }
+
+    #iron-radio-player.collapsed .radio-player-content {
+        display: none;
+    }
+
+    .radio-player-content {
+        transition: opacity .2s ease-out;
+    }
+
+    .radio-player-dj {
+        width: calc(68px - 16px);
+        height: calc(84px - 16px);
+        background: var(--image) -15px 0px;
+        padding: 8px;
+        touch-action: none;
+        user-select: none;
+    }
+
+    .radio-player-avatar {
+        width: 52px;
+        height: 68px;
+        background-position: -10px -15px;
+        position: relative;
+    }
+
+    .radio-player-avatar::after {
+        content: ' ';
+        position: absolute;
+        width: 26px;
+        height: 40px;
+        background: var(--image) -332px 0px;
+        top: 28px;
+        left: 30px;
+    }
+
+    .radio-player-count {
+        width: calc(51px - 23px);
+        height: 16px;
+        position: absolute;
+        background:  var(--image) -23px -84px;
+        top: 84px;
+        left: 25px;
+        padding-left: 23px;
+        touch-action: none;
+        user-select: none;
+        font-size: 11px;
+    }
+
+    .radio-player-info {
+        width: calc(175px - 24px);
+        height: calc(50px - 12px);
+        background: var(--image) -83px 0px;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, .5);
+        display: flex;
+        flex-direction: column;
+        padding: 6px 12px;
+        touch-action: none;
+        user-select: none;
+    }
+
+    .radio-player-info div:first-child {
+        margin-bottom: 2px;
+    }
+
+    .radio-player-info div {
+        height: 18px;
+        line-height: 18px;
+        padding-left: 25px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .iron-player-actions {
+        display: flex;
+        padding: 0px 5px;
+    }
+
+    .iron-player-action {
+        width: 25px;
+        height: 30px;
+        cursor: pointer;
+        margin-right: 3px;
+    }
+
+    .iron-player-action[action='presence'] {
+        background:  var(--image) -88px -50px;
+    }
+
+    .iron-player-action[action='request'] {
+        background:  var(--image) -116px -50px;
+    }
+
+    .iron-player-action[action='follow'] {
+        background:  var(--image) -144px -50px;
+    }
+
+    .iron-player-action[action='refresh'] {
+        background:  var(--image) -172px -50px;
+    }
+
+    .iron-player-action[action='volume_plus'] {
+        background:  var(--image) -200px -50px;
+    }
+
+    .iron-player-action[action='volume_minus'] {
+        background:  var(--image) -228px -50px;
+        margin-right: 0px;
+    }
+
+    .iron-player-play {
+        width: 36px;
+        height: 50px;
+        background:  var(--image) -258px 0px;
+        cursor: pointer;
+    }
+
+    .iron-player-play.paused {
+        background:  var(--image) -295px 0px;
+    }
+
+    .radio-player-form-holder {
+        position: absolute;
+        height: 30px;
+        display: none;
+        top: 90px;
+        left: 87px;
+    }
+
+    .radio-player-form {
+        display: flex;
+    }
+
+    .radio-player-form > div:nth-child(1) {
+        width: calc(170px - 23px);
+        height: calc(30px - 13px);
+        background:  var(--image) -87px -82px;
+        padding: 7px 13px 6px 10px;
+    }
+
+    .radio-player-form .player-form-send {
+        width: 36px;
+        height: 30px;
+        background: var(--image) -258px -82px;
+        cursor: pointer;
+    }
+
+    #player-form-input {
+        border: none;
+        width: 147px;
+        height: 16px;
+        font-size: 11px;
+        padding: 0;
+        outline: none;
+        background: none;
+        color: white;
+    }
+
+    #player-form-alert {
+        display: none;
+        width: 147px;
+        height: 16px;
+        line-height: 16px;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    #player-form-input::placeholder {
+        color: white;
+        opacity: 0.8;
+    }
+  </style>

@@ -1,0 +1,148 @@
+.nitro-purse-container {
+    font-size: 0.721875rem;
+    pointer-events: all;
+
+    .nitro-purse {
+        background-color: #282828a6;
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    border-left: 2px solid rgba(255, 255, 255, .2);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 2px #000000b3, 0 0 0 1px #000000b3;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #fff;
+    margin-bottom: 2px;
+    font-weight: 600;
+
+        .club-text {
+            color: #54b7bb;
+
+            &:hover {
+                filter: brightness(150%);
+            }
+        }
+
+        .nitro-purse-button.currency-type-0 {
+            color: #cd81c9;
+            margin-bottom:2px
+        }
+
+        .nitro-purse-button.currency-type-0:hover {
+            color:#fed3fe
+        }        
+
+        .nitro-purse-button.currency-type--1 {
+            color: #d4ae21;
+            margin-bottom: 2px;
+        
+        }
+
+        .nitro-purse-button.currency-type--1:hover {
+            color:#f1e966
+        }
+
+        .nitro-purse-button.currency-type-5 {
+            color:#37c9ea
+        }
+
+        .nitro-purse-button.currency-type-5:hover {
+            color:#84fefe
+        }
+
+        .nitro-purse-subscription {
+            color: #06b4b6;
+            border-radius: 4px;
+            background-color: #33312ce6
+        }
+
+        .nitro-purse-right-button {
+            border-image-slice: 4 4 4 4 fill;
+            border-image-width: 4px 4px 4px 4px;
+            width: 60px;
+            height: 20px;
+
+        }
+
+        .test-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            cursor: pointer;
+            height: 19px;
+            font-size: 11px;
+            padding: 1px 10px 2px;
+            border: solid 1px black;
+            border-radius: 3px;
+            box-shadow: inset 0 -1px #0003, inset -1px 0 #0003;
+            font-weight: 300;
+            color: #fff;
+            width: 100%;
+            text-align: center
+        }
+
+        .test-btn.help {
+            background-color: #207ab4;
+            margin-bottom: 2px
+        }
+
+       .test-btn.logout {
+            background-color: #dd5246;
+            margin-bottom: 2px
+        }
+
+        .test-btn.settings {
+            background-color: #716a85
+        }
+
+        .test-btn:hover {
+            box-shadow: inset 1px 1px #000, inset -1px -1px #000
+        }
+
+        .icon.icon-exit {
+            background: url(/nitro/static/assets/exit-db2be8c2.svg);
+            width: 13px;
+            height: 11px
+        }
+        
+        .icon.icon-gear {
+            background: url(/nitro/static/assets/gear-9b52e047.svg);
+            width: 12px;
+            height: 12px
+        }
+        
+    }
+
+    .nitro-purse-seasonal-currency {
+        background-color: #282828a6;
+        border: 2px solid rgba(255, 255, 255, .2);
+        box-shadow: 0 2px #000000b3, 0 0 0 1px #000000b3;
+        border-radius: 4px;
+        color: #fff;
+        margin-bottom: 2px;
+    }
+
+    .currency-type-102 span {
+        color: #d8b887;
+        font-weight: 600
+    }
+    
+   .currency-type-103 span {
+        color: #cd81c9;
+        font-weight: 600
+    }
+    
+    .currency-type-104 span {
+        color: #89cdf0;
+        font-weight: 600
+    }
+    
+    .currency-type-105 span {
+        color: #ffc6ed;
+        font-weight: 600
+    }
+    
+    .currency-type-105 span:hover {
+        color: #f3cd5a
+    }
+}

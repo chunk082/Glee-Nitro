@@ -170,7 +170,7 @@
 }
 
 .nitro-group-forum .content-wrap .content .thread .thread-actions .icon-pinned {
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAAW0lEQVR4XmNgQAX/8WCs4P/M0//B+Nx/BIaJgeTRNcDA/7QZFzAwSBxdITIAK4KZDsJDXBOGBkIa4QqQg5uYYIcJgnFDQwMKH4rxgv8gAKLRJfCBQa4JBHBqAACB5tc1slxugAAAAABJRU5ErkJggg==);
+    background-image: url(@/assets/images/groups/groupforum/forumpinned.png);
     width: 13px;
     height:15px
 }
@@ -420,6 +420,7 @@
 }
 
 .nitro-group-forum .content-wrap .content .group {
+    font-size: 12px;
     word-break: break-word;
     cursor:pointer
 }
@@ -430,6 +431,7 @@
 }
 
 .nitro-group-forum .content-wrap .content .group .group-info {
+    font-size: 12px;
     width: 200px;
     grid-gap: initial !important;
     gap: initial !important;
@@ -437,7 +439,7 @@
 }
 
 .nitro-group-forum .content-wrap .content .group .group-info .header {
-    font-size:13px
+    font-size:13px;
 }
 
 .nitro-group-forum .content-wrap .content .group .threads-info {
